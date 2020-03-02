@@ -1,0 +1,21 @@
+
+table{
+    margin-top:100px ;
+    text-align: center;
+    
+}
+.container{
+    height:100px;
+    color:lightblue;
+    
+}
+#num3{
+    width:100%;
+    background: rgb(25, 95, 165);
+    color:white;
+}
+#num4{
+    width:100%;
+    background: rgb(25, 95, 165);
+    color:white;
+}

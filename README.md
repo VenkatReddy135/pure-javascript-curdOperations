@@ -1,1 +1,1 @@
-# pure-javascript-curdOperations
+# javascript-curd-operations

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+        <table  border="4">
+            <tr>
+                <th>firstname</th>
+                <td><input type="text" id="num1"></td>
+            </tr>
+            <tr>
+                    <th>lastname</th>
+                    <td><input type="text" id="num2"></td>
+            </tr>
+            <tr>
+                    <th>email</th>
+                    <td><input type="text" id="num3"></td>
+            </tr>
+            <tr>
+                    <th>age</th>
+                    <td><input type="text" id="num4"></td>
+            </tr>
+            <tr id="btn">
+                <td colspan="2"><input type="button" onclick="table()" value="add" id="button"></td>
+            </tr>
+        </table>
+        <table border="4" id="show">
+            <tr>
+            <th>fname</th>
+            <th>lname</th>
+            <th>email</th>
+            <th>age</th>
+            </tr>
+        </table>
+        <script>
+            var list1=[];
+            var list2=[];
+            var list3=[];
+            var list4=[];
+            var x=0;
+            var n=1;
+            function table(){
+                var Row=document.getElementById("show");
+                var newRow=Row.insertRow(n);
+              list1[x]=document.getElementById("num1").value;
+              list2[x]=document.getElementById("num2").value;
+              list3[x]=document.getElementById("num3").value;
+              list4[x]=document.getElementById("num4").value;
+              
+            var cel1=newRow.insertCell(0);
+            var cel2=newRow.insertCell(1);
+            var cel3=newRow.insertCell(2);
+            var cel4=newRow.insertCell(3);
+            
+            cel1.innerHTML=list1[x];
+            cel2.innerHTML=list2[x];
+            cel3.innerHTML=list3[x];
+            cel4.innerHTML=list4[x];
+            x++;
+            n++;
+            }
+        </script>
+
+
+
+    
+</body>
+</html>
